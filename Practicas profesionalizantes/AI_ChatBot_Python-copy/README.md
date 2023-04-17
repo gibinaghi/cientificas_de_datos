@@ -27,3 +27,26 @@ Instagram -  https://www.instagram.com/freebirdscrew
 
 
 The More You Analyze, More You Get Insights from the Data.
+
+
+***NUESTRO TRABAJO*** 
+Grupo constituido por Karina Alem, María Gimena Binaghi, Florencia Bravo Corvalán y Laura Martínez Quijano
+
+***Primer paso: correr el Contextual Chatbot en Colab***
+Errores encontrados y sus soluciones:
+*Error al no encontrar el archivo Untitled.png - Solucionado al importar el archivo con el siguiente codigo:
+from google.colab import files
+uploaded = files.upload()
+*Error al no encontrar la librería tflearn - Solucionado instalando la libreria con el siguiente codigo: !pip install tflearn
+*Error con la version de tensorflow <—— deprecated - Solucionado instalando una versión más reciente con el siguiente código: !pip install tensorflow2.5.0
+*Error al no encontrar el archivo intents.json - Solucionado al importar el archivo con el siguiente codigo:
+uploaded = files.upload()
+*Error con la librería nltk al usarlo en nltk.word_tokenize - Solucionado incorporando previamente el siguiente codigo:
+nltk.download('punkt')
+from nltk import word_tokenize,sent_tokenize
+*Error en el codigo reset_default_graph(). <—— deprecated - Solucionado con la actualizacion de la función:
+tf.compat.v1.reset_default_graph()
+*Error en la linea con el codigo "das" - Solucionado con # para anularla
+
+
+***Segundo paso: correr el Chatterbot en Colab***
