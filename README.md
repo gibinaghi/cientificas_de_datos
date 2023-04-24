@@ -6,5 +6,5 @@
 ## Integrantes
 - Karina Alem
 - Florencia Corvalan
-- Laura Matinez Quijano
+- Laura Martinez Quijano
 - María Gimena Binaghi
