@@ -2,37 +2,27 @@
 <html>
 <head>
 	<title>Home</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 <body>
 
 	<header>
 		<div class="container">
-		<div id="brandname">
-			Machine Learning App with Flask
+			<div id="brandname">
+				<h1><span class="highlight">Spam</span> Machine Learning App with Flask </h1>
+				<h2>Spam Detector For SMS Messages</h2>
+			</div>		
 		</div>
-		<h2>Spam Detector For SMS Messages</h2>
-		
-	</div>
 	</header>
-
-	<div class="ml-container">
-
-		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your Message Here</p>
-		<!-- <input type="text" name="comment"/> -->
-		<textarea name="message" rows="4" cols="50"></textarea>
-		<br/>
-
-		<input type="submit" class="btn-info" value="predict">
-		
-	</form>
-		
-	</div>
-
 	
-	
+		<div class="ml-container">
+			<form action="{{ url_for('predict')}}" method="POST">
+				<p class="message">Enter Your Message Here</p>
+				<textarea class="box" name="message" rows="4" cols="50"></textarea>
+				<input type="submit" class="btn-info" value="Predict">
+			</form>
+			
+		</div>	
 
 </body>
 </html>
