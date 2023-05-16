@@ -4,9 +4,17 @@ En Linux:
 
 sudo apt install python3-venv
 
-python3 -m venv my-project-env
+Crear un entorno virtual nuevo:  python3 -m venv my-project-env
 
-source my-project-env/bin/activate
+Activar un entorno virtual: source my-project-env/bin/activate
+
+En Windows:
+
+Crear un entorno virtual nuevo: python -m venv c:\ruta\al\entorno\virtual
+
+Activar un entorno virtual: c:\ruta\al\entorno\virtual\scripts\activate.bat
+---------------------------------------------------------------------------------------
+Instalar librerias correpondientes:
 
 pip install flask
 
