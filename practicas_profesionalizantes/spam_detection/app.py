@@ -3,7 +3,8 @@ import pandas as pd
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.externals import joblib
+import sklearn.externals
+import joblib
 
 
 app = Flask(__name__)
@@ -14,7 +15,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df= pd.read_csv("spam.csv", encoding="latin-1")
+	df= pd.read_csv("~/Documentos/cientificas_de_datos/practicas_profesionalizantes/spam_detection/spam.csv", encoding="latin-1")
 	df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
 	# Features and Labels
 	df['label'] = df['class'].map({'ham': 0, 'spam': 1})
@@ -29,20 +30,28 @@ def predict():
 	#Naive Bayes Classifier
 	from sklearn.naive_bayes import MultinomialNB
 
-	clf = MultinomialNB()
-	clf.fit(X_train,y_train)
-	clf.score(X_test,y_test)
+	#clf = MultinomialNB()
+	#clf.fit(X_train,y_train)
+	#clf.score(X_test,y_test)
 	#Alternative Usage of Saved Model
-	# joblib.dump(clf, 'NB_spam_model.pkl')
-	# NB_spam_model = open('NB_spam_model.pkl','rb')
-	# clf = joblib.load(NB_spam_model)
+	
+	NB_spam_model = open('/home/florencia/Documentos/cientificas_de_datos/practicas_profesionalizantes/spam_detection/spam_clf_v1.pkl','rb')
+	clf = joblib.load(NB_spam_model)
+	#joblib.dump(clf, 'NB_spam_model.pkl')
 
 	if request.method == 'POST':
 		message = request.form['message']
 		data = [message]
 		vect = cv.transform(data).toarray()
 		my_prediction = clf.predict(vect)
-	return render_template('result.html',prediction = my_prediction)
+		print(my_prediction)
+		#print(vect)
+		if my_prediction == ['spam']:
+			predi=1
+		else:
+			predi=0
+
+	return render_template('result.html',prediction = predi)
 
 
 
