@@ -13,6 +13,7 @@ En Windows:
 Crear un entorno virtual nuevo: python -m venv c:\ruta\al\entorno\virtual
 
 Activar un entorno virtual: c:\ruta\al\entorno\virtual\scripts\activate.bat
+
 ---------------------------------------------------------------------------------------
 Instalar librerias correpondientes:
 
