@@ -1,5 +1,5 @@
 # Científicas_de_datos
-- Repositorio para módulo Científicos de datos 
+- Repositorio para módulo Científicas de datos 
 - TSCD - ISPC
 - Cohorte 2021
 
