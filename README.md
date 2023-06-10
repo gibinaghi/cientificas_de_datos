@@ -16,9 +16,10 @@ Breve descripción: sobre la base de un modelo previamente desarrollado, transfo
 Se encuentran en un documento con imágenes ilustrativas en la carpeta "documentation".
 
 ##### Problemas y dificultades encontradas:
-Los primeros issues que definimos fueron tentativos, antes de definir sobre qué modelo trabajaríamos. Cuando identificamos al modelo, surgieron más espontáneamente las tareas y su asignación en el grupo.
+Los primeros issues que definimos fueron tentativos, antes de definir sobre qué modelo trabajaríamos. Cuando identificamos al modelo de detección de spam, surgieron más espontáneamente las tareas y su asignación en el grupo.
 Los primeros sprints que definimos (uno por semana) nos quedaron cortos porque hubo varias redefiniciones a medida que avanzábamos con el trabajo, por lo que los desplazamos en el tiempo y reordenamos las issues.
-Versión de Python y de librerías en conflicto con el modelo??
-Creación de entorno virtual???
-Identificación de servidor virtual para cargar el proyecto y mostrar cómo quedaría??
-Luego de entender cómo se estructura un repo, re-estructuramos lo que habíamos hecho en las carpetas sugeridas y creamos branches al main para subir el trabajo de cada una de nosotras.
+En la creación del pkl nos encontramos con... **KARI**
+Al verificar la funcionalidad del back end encontramos conflictos con la versión de Python y de las librerías que resolvimos creando un entorno virtual.
+Después nos encontramos con el desafío de dónde subir la aplicación flask creada, y encontramos pythonanywhere.com.
+Al desarrollar el front end... **GIME**
+Luego de entender cómo se estructura un repo, re-estructuramos lo que habíamos hecho originalmente en las carpetas sugeridas , y creamos branches para subir el trabajo de cada una de nosotras.
