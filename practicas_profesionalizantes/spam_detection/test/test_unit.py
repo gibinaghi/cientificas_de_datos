@@ -8,7 +8,7 @@ from deteccion_spam import spamdetection
 
 class TestSpamDetection(unittest.TestCase):
 
-    @patch('builtins.input', return_value='¡Obtén un millón de dólares en un solo día!')
+    @patch('builtins.input', return_value='Win a million dollars in a day!')
     def test_spam_detection_spam_input(self, mock_input):
         expected_output = "Spam"
 
@@ -28,7 +28,7 @@ class TestSpamDetection(unittest.TestCase):
         # Verificar si la salida es la esperada
         self.assertEqual(actual_output, expected_output)
 
-    @patch('builtins.input', return_value='Hola, ¿cómo estás?')
+    @patch('builtins.input', return_value='Hello, how are you?')
     def test_spam_detection_non_spam_input(self, mock_input):
         expected_output = "No spam"
 
@@ -68,5 +68,5 @@ class TestSpamDetection(unittest.TestCase):
         # Verificar si la salida es la esperada
         self.assertEqual(actual_output, expected_output)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()

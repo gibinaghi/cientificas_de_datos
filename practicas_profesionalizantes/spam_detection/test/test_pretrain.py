@@ -31,5 +31,5 @@ class TestPreTraining(unittest.TestCase):
         # Comprobar si la precisión es mayor al 80%
         self.assertGreaterEqual(accuracy, 0.8)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()

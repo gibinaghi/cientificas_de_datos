@@ -48,5 +48,5 @@ class TestModelEvaluation(unittest.TestCase):
         expected_precision = 0.6666666666666666
         self.assertAlmostEqual(precision, expected_precision, places=2)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()
