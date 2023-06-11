@@ -1,4 +1,4 @@
-#ChatGPT para prueba estática
+#prueba estática
 import unittest
 import pandas as pd
 import numpy as np
@@ -26,5 +26,5 @@ class TestSpamDetection(unittest.TestCase):
         accuracy = self.clf.score(self.X_test, self.y_test)
         self.assertGreater(accuracy, 0.8)  # Verificar si la precisión del modelo es mayor al 80%
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main()
