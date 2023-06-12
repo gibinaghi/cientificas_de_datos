@@ -20,6 +20,6 @@ Los primeros issues que definimos fueron tentativos, antes de definir sobre qué
 Los primeros sprints que definimos (uno por semana) nos quedaron cortos porque hubo varias redefiniciones a medida que avanzábamos con el trabajo, por lo que los desplazamos en el tiempo y reordenamos las issues.
 En la creación del pkl nos encontramos con... **KARI**
 Al verificar la funcionalidad del back end encontramos conflictos con la versión de Python y de las librerías que resolvimos creando un entorno virtual.
-Después nos encontramos con el desafío de dónde subir la aplicación flask creada, y encontramos pythonanywhere.com.
-Al desarrollar el front end... **GIME**
+Al desarrollar el front end nos encontramos con el desafío de investigar como concetar back con front. Decidimos hacerlo con Flask y desarrollamos el front con HTML dandole estilos con CSS.
+Después nos encontramos con el desafío de dónde subir la aplicación Flask creada, y encontramos pythonanywhere.com.
 Luego de entender cómo se estructura un repo, re-estructuramos lo que habíamos hecho originalmente en las carpetas sugeridas , y creamos branches para subir el trabajo de cada una de nosotras.
