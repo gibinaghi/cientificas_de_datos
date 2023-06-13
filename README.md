@@ -10,7 +10,7 @@
 - María Gimena Binaghi
 
 ### Objetivo del proyecto: poner en producción un proyecto de detección de spam. 
-Breve descripción: sobre la base de un modelo previamente desarrollado, transformarlo a un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
+Breve descripción: sobre la base de un modelo previamente desarrollado, lo transformamos en un modelo de aprendizaje automático para guardar la fase de entrenamiento en un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
 
 #### Instrucciones para poner en marcha (deploy) el modelo
 Se encuentran en un documento con imágenes ilustrativas en la carpeta "documentation".
