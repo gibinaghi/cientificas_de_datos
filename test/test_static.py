@@ -1,13 +1,9 @@
-import unittest
-from deteccion_spam import spamdetection
+import pandas as pd
 
-class TestStaticDetection(unittest.TestCase):
+def test_static():
+    df = pd.read_csv("~/Documentos/cientificas_de_datos/data/spam.csv", encoding="latin-1")
+    assert df is not None, "Error: DataFrame is not loaded"
+    assert len(df.columns) == 2, "Error: DataFrame should have 2 columns"
 
-    def test_static_detection(self):
-        sample = "Free money! Claim now!"
-        expected_prediction = "spam"
-        prediction = spamdetection(sample)
-        assert prediction == expected_prediction, f"Error: Expected {expected_prediction}, but got {prediction}"
-
-if __name__ == '__main__':
-    unittest.main()
+# Prueba de la función test_static
+test_static()

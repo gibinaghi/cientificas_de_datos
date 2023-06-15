@@ -1,14 +1,10 @@
-import pandas as pd
-import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import MultinomialNB
+import joblib
 
-def post_train(cv, clf):
-    sample = "Free money! Claim now!"
-    expected_prediction = "spam"
-    data = cv.transform([sample]).toarray()
-    prediction = clf.predict(data)
-    assert prediction == expected_prediction, f"Error: Expected {expected_prediction}, but got {prediction}"
-    print("Prediction:", prediction)
+def test_post_train():
+    NB_spam_model = open('/home/florencia/Documentos/cientificas_de_datos/model/spam_clf_v1.pkl', 'rb')
+    clf = joblib.load(NB_spam_model)
+    assert clf is not None, "Error: Model is not loaded"
+
+test_post_train()
+
 

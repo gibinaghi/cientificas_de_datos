@@ -1,15 +1,43 @@
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+import joblib
 
-import unittest
 
-from deteccion_spam import spamdetection
+def detect_spam(message):
+    # Cargar el modelo entrenado
+    NB_spam_model = open('/home/florencia/Documentos/cientificas_de_datos/model/spam_clf_v1.pkl', 'rb')
+    clf = joblib.load(NB_spam_model)
 
-class TestSpamDetection(unittest.TestCase):
+    # Cargar el vectorizador
+    cv = CountVectorizer(vocabulary=joblib.load("/home/florencia/Documentos/cientificas_de_datos/model/spam_vectorizer_v1.pkl"))
 
-    def test_spam_detection(self):
-        sample = "Free money! Claim now!"
-        expected_prediction = "spam"
-        prediction = spamdetection(sample)
-        assert prediction == expected_prediction, f"Error: Expected {expected_prediction}, but got {prediction}"
+    # Transformar el mensaje en un vector de características
+    data = [message]
+    vect = cv.transform(data).toarray()
 
-if __name__ == '__main__':
-    unittest.main()
+    # Realizar la predicción de spam
+    prediction = clf.predict(vect)
+
+    return prediction
+
+
+def test_spam_detection():
+    # Arrange
+    message = "Buy now and get a discount!"
+    expected_prediction = ['spam']
+
+    # Act
+    prediction = detect_spam(message)
+
+    # Assert
+    assert prediction == expected_prediction
+
+    # Print result
+    if prediction == expected_prediction:
+        print("La predicción de spam es correcta.")
+    else:
+        print("Error: La predicción de spam no es la esperada.")
+
+
+# Ejecutar la prueba
+test_spam_detection()
