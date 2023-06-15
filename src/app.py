@@ -15,7 +15,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df= pd.read_csv("~/Documentos/cientificas_de_datos/practicas_profesionalizantes/spam_detection/spam.csv", encoding="latin-1")
+	df= pd.read_csv("~/Documentos/cientificas_de_datos/data/spam.csv", encoding="latin-1")
 	df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
 	# Features and Labels
 	df['label'] = df['class'].map({'ham': 0, 'spam': 1})
@@ -35,7 +35,7 @@ def predict():
 	#clf.score(X_test,y_test)
 	#Alternative Usage of Saved Model
 	
-	NB_spam_model = open('/home/florencia/Documentos/cientificas_de_datos/practicas_profesionalizantes/spam_detection/spam_clf_v1.pkl','rb')
+	NB_spam_model = open('/home/florencia/Documentos/cientificas_de_datos/model/spam_clf_v1.pkl','rb')
 	clf = joblib.load(NB_spam_model)
 	#joblib.dump(clf, 'NB_spam_model.pkl')
 

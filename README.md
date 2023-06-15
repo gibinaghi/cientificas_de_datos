@@ -10,7 +10,7 @@
 - María Gimena Binaghi
 
 ### Objetivo del proyecto: poner en producción un proyecto de detección de spam. 
-Breve descripción: sobre la base de un modelo previamente desarrollado, transformarlo a un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
+Breve descripción: sobre la base de un modelo previamente desarrollado, lo transformamos en un modelo de aprendizaje automático para guardar la fase de entrenamiento en un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
 
 #### Instrucciones para poner en marcha (deploy) el modelo
 Se encuentran en un documento con imágenes ilustrativas en la carpeta "documentation".
@@ -20,6 +20,41 @@ Los primeros issues que definimos fueron tentativos, antes de definir sobre qué
 Los primeros sprints que definimos (uno por semana) nos quedaron cortos porque hubo varias redefiniciones a medida que avanzábamos con el trabajo, por lo que los desplazamos en el tiempo y reordenamos las issues.
 En la creación del pkl nos encontramos con... **KARI**
 Al verificar la funcionalidad del back end encontramos conflictos con la versión de Python y de las librerías que resolvimos creando un entorno virtual.
-Después nos encontramos con el desafío de dónde subir la aplicación flask creada, y encontramos pythonanywhere.com.
-Al desarrollar el front end... **GIME**
+Al desarrollar el front end nos encontramos con el desafío de investigar como concetar back con front. Decidimos hacerlo con Flask y desarrollamos el front con HTML dandole estilos con CSS.
+Después nos encontramos con el desafío de dónde subir la aplicación Flask creada, y encontramos pythonanywhere.com.
 Luego de entender cómo se estructura un repo, re-estructuramos lo que habíamos hecho originalmente en las carpetas sugeridas , y creamos branches para subir el trabajo de cada una de nosotras.
+
+
+# Para levantar la aplicación:
+
+En Linux:
+
+sudo apt install python3-venv
+
+Crear un entorno virtual nuevo:  python3 -m venv my-project-env
+
+Activar un entorno virtual: source my-project-env/bin/activate
+
+En Windows:
+
+Crear un entorno virtual nuevo: python -m venv c:\ruta\al\entorno\virtual
+
+Activar un entorno virtual: c:\ruta\al\entorno\virtual\scripts\activate.bat
+
+---------------------------------------------------------------------------------------
+Instalar librerias correpondientes:
+
+pip install flask
+
+Despues de instalar CTRL+SHIFT+P y buscar Python Interpreter 
+![imagen](https://github.com/gibinaghi/cientificas_de_datos/assets/67662395/7d8aceb8-f074-436f-b3ef-501a23448e8f)
+
+Seleccionar el entorno virtual my-project-env que se creo en el paso anterior
+![imagen](https://github.com/gibinaghi/cientificas_de_datos/assets/67662395/57334731-f9e7-4253-bc6c-80ffe7569c2c)
+
+Luego pararse en la carpeta donde esta el archivo requirements.txt y para instalar las librerias ejecutar lo siguiente:
+pip install -r requirements.txt
+
+Por ultimo configurar los siguientes paths:
+![imagen](https://github.com/gibinaghi/cientificas_de_datos/assets/67662395/5b875ade-ffbf-43bf-b111-c594a674581d)
+![imagen](https://github.com/gibinaghi/cientificas_de_datos/assets/67662395/61c648e3-8e99-444e-ac7a-a3a63e782d67)

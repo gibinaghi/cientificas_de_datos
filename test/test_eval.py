@@ -24,3 +24,4 @@ def evaluation(X_test, y_test, clf):
     print("Accuracy:", accuracy)
     print("Recall:", recall)
     print("F1 score:", f1)
+

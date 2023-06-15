@@ -12,5 +12,3 @@ def post_train(cv, clf):
     assert prediction == expected_prediction, f"Error: Expected {expected_prediction}, but got {prediction}"
     print("Prediction:", prediction)
 
-# Ejemplo de uso
-post_train(cv, clf)
