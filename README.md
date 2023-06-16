@@ -9,9 +9,18 @@
 - Laura Martinez Quijano
 - María Gimena Binaghi
 
+<<<<<<< Updated upstream
 ### Objetivo del proyecto: poner en producción un proyecto de detección de spam
 
 ### Breve descripción: sobre la base de un modelo previamente desarrollado, lo transformamos en un modelo de aprendizaje automático para guardar la fase de entrenamiento en un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
+=======
+### Objetivo del proyecto: 
+poner en producción un proyecto de detección de spam. 
+
+### Breve descripción: 
+Se toma un dataset que posee informacion sobre mensajes que fueron fraude o no. La base se usó para crear un modelo de clasificacion con  una precisión de 0.91 y recall de 0.93 para la clase de interés(SPAM) y precisión de 0.99 y recall de 0.99 para la clase HAM.
+En posterior se realizó la construcción de un frontend con HTML y CSS. Luego se desarrollo del lado del backend la estructura para llamar al modelo, realizar la predicción y mostrarlo en el front. Por último se realizaron distintos test para asegurar el correcto funcionamiento.
+>>>>>>> Stashed changes
 
 ### Instrucciones para poner en marcha (deploy) el modelo
 Se encuentran en un documento con imágenes ilustrativas en la carpeta "documentation".
@@ -19,12 +28,11 @@ Se encuentran en un documento con imágenes ilustrativas en la carpeta "document
 ### Problemas y dificultades encontradas:
 Los primeros issues que definimos fueron tentativos, antes de definir sobre qué modelo trabajaríamos. Cuando identificamos al modelo de detección de spam, surgieron más espontáneamente las tareas y su asignación en el grupo.
 Los primeros sprints que definimos (uno por semana) nos quedaron cortos porque hubo varias redefiniciones a medida que avanzábamos con el trabajo, por lo que los desplazamos en el tiempo y reordenamos las issues.
-En la creación del pkl nos encontramos con... **KARI**
 Al verificar la funcionalidad del back end encontramos conflictos con la versión de Python y de las librerías que resolvimos creando un entorno virtual.
-Al desarrollar el front end nos encontramos con el desafío de investigar como concetar back con front. Decidimos hacerlo con Flask y desarrollamos el front con HTML dandole estilos con CSS.
+Al desarrollar el front end nos encontramos con el desafío de investigar como conectar back con front. Decidimos hacerlo con Flask y desarrollamos el front con HTML dandole estilos con CSS.
 Después nos encontramos con el desafío de dónde subir la aplicación Flask creada, y encontramos pythonanywhere.com.
 Luego de entender cómo se estructura un repo, re-estructuramos lo que habíamos hecho originalmente en las carpetas sugeridas , y creamos branches para subir el trabajo de cada una de nosotras.
-
+En la etapa de testing nos encontramos con el problema de que corre con paths locales o rutas estaticas pero no relativas. Corroborando que corre de manera local pero no al cambiar de pc.
 
 # Para levantar la aplicación:
 
