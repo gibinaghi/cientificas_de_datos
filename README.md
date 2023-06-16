@@ -9,13 +9,14 @@
 - Laura Martinez Quijano
 - María Gimena Binaghi
 
-### Objetivo del proyecto: poner en producción un proyecto de detección de spam. 
-Breve descripción: sobre la base de un modelo previamente desarrollado, lo transformamos en un modelo de aprendizaje automático para guardar la fase de entrenamiento en un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
+### Objetivo del proyecto: poner en producción un proyecto de detección de spam
 
-#### Instrucciones para poner en marcha (deploy) el modelo
+### Breve descripción: sobre la base de un modelo previamente desarrollado, lo transformamos en un modelo de aprendizaje automático para guardar la fase de entrenamiento en un pkl que pueda ser puesto en producción, crear el front end con una visualización agradable para el usuario, desarrollar el back end para vincular el front end con el modelo y realizar las diferentes etapas de testing para asegurar su buen funcionamiento.
+
+### Instrucciones para poner en marcha (deploy) el modelo
 Se encuentran en un documento con imágenes ilustrativas en la carpeta "documentation".
 
-##### Problemas y dificultades encontradas:
+### Problemas y dificultades encontradas:
 Los primeros issues que definimos fueron tentativos, antes de definir sobre qué modelo trabajaríamos. Cuando identificamos al modelo de detección de spam, surgieron más espontáneamente las tareas y su asignación en el grupo.
 Los primeros sprints que definimos (uno por semana) nos quedaron cortos porque hubo varias redefiniciones a medida que avanzábamos con el trabajo, por lo que los desplazamos en el tiempo y reordenamos las issues.
 En la creación del pkl nos encontramos con... **KARI**
