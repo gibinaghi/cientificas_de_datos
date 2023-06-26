@@ -26,7 +26,7 @@ Al verificar la funcionalidad del back end encontramos conflictos con la versió
 Al desarrollar el front end nos encontramos con el desafío de investigar como conectar back con front. Decidimos hacerlo con Flask y desarrollamos el front con HTML dandole estilos con CSS.
 Después nos encontramos con el desafío de dónde subir la aplicación Flask creada, y encontramos pythonanywhere.com.
 Luego de entender cómo se estructura un repo, re-estructuramos lo que habíamos hecho originalmente en las carpetas sugeridas , y creamos branches para subir el trabajo de cada una de nosotras.
-En la etapa de testing nos encontramos con el problema de que corre con paths locales o rutas estaticas pero no relativas. Corroborando que corre de manera local pero no al cambiar de pc.
+En la etapa de testing nos encontramos con el problema de que corre con paths locales o rutas estaticas pero no relativas. Comprobamos que corre de manera local pero no al cambiar de pc.
 
 ### Link servidor: 
 http://florcorvalan26.pythonanywhere.com/
